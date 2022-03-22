@@ -1,0 +1,22 @@
+for generate html code template
+    ! + tab 
+
+h1#test + tab => <h1 id="test"></h1> 
+
+h1.test + tab => <h1 class="test"></h1> 
+
+#test + tab => <div id="test"></div>
+
+.test + tab => <div class="test"></div>
+
+<ul> li*5 </ul> => <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+
+for generate dummy  text of 40 words 
+    lorem40 + tab 
