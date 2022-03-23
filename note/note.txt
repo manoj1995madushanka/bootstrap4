@@ -23,3 +23,8 @@ for generate dummy  text of 40 words
 
 
 1 rem  = 8 px
+
+
+two types of html elements
+    inline elements(span)
+    block elements(h1,h1,p) 
