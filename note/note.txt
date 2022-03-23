@@ -28,3 +28,7 @@ for generate dummy  text of 40 words
 two types of html elements
     inline elements(span)
     block elements(h1,h1,p) 
+
+
+padding is the inside thing 
+margin is for outside thing 
