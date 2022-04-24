@@ -340,6 +340,15 @@
         pause: "hover",
         wrap: true, // this will say slider need repeat images
       });
+
+      // slider events
+      // this methods will trigger when slider chaange
+      $("#slider4").on("slide.bs.carousel", function () {
+        console.log("SLIDE!");
+      });
+      $("#slider4").on("slid.bs.carousel", function () {
+        console.log("SLID!");
+      });
     </script>
   </body>
 </html>
