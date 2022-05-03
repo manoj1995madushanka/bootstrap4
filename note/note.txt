@@ -31,4 +31,8 @@ two types of html elements
 
 
 padding is the inside thing 
-margin is for outside thing 
+margin is for outside thing
+
+
+for add footer 
+    footer#main-footer.bg-dark
