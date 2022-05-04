@@ -41,5 +41,5 @@ for add footer
 Koala(http://koala-app.com/) is a tool for compile edited bootstrap source files 
     for use this we need to download bootstrap source files 
     _ files are not compile file of bootstrap source files
-    
+    if we need to change default bootstrap properties we can do it in _variables.scss file before compile using koala
 
