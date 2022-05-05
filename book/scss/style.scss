@@ -30,3 +30,18 @@ body{
         height: 100%;
     }
 }
+
+
+
+
+// media queries usually added to bottom
+// when screen size less than 768px below logic apply 
+@media(max-width:768px){
+    #showcase{
+        min-height: 500px;
+
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
