@@ -48,3 +48,4 @@ press ctrl+d for edit multiple lines
 
 d.none : display none
 d-sm-block : display on small size sceen as a block 
+m-auto : will alighn content to the middle
