@@ -1,4 +1,9 @@
-.navbar .nav-link{
+/* hide vertical scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+.navbar .nav-link {
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 1rem !important;
@@ -6,11 +11,11 @@
 
 }
 
-.nabar .nav-item.active{
+.nabar .nav-item.active {
     border-left: #444 3px solid;
 }
 
-.carousel-item{
+.carousel-item {
     height: 450px;
 }
 
@@ -48,7 +53,7 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
-#video-play{
+#video-play {
     position: relative;
     min-height: 200px;
     background: url('../img/media.jpg');
