@@ -120,17 +120,26 @@
           <div class="col-md-4 mb-4 text-center">
             <i class="fas fa-cog fa-3x mb-2"></i>
             <h3>Turning Gears</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, non?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              non?
+            </p>
           </div>
           <div class="col-md-4 mb-4 text-center">
             <i class="fas fa-cloud fa-3x mb-2"></i>
             <h3>Sending Data</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, non?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              non?
+            </p>
           </div>
           <div class="col-md-4 mb-4 text-center">
             <i class="fas fa-cart-plus fa-3x mb-2"></i>
             <h3>Making Money</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, non?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              non?
+            </p>
           </div>
         </div>
       </div>
@@ -142,11 +151,10 @@
         <div class="row">
           <div class="col">
             <div class="container pt-5">
-              <h1>
-                Are you ready to get start?
-              </h1>
+              <h1>Are you ready to get start?</h1>
               <p class="d-none d-md-block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officiis perspiciatis voluptatibus doloremque? Quis, maxime!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                officiis perspiciatis voluptatibus doloremque? Quis, maxime!
               </p>
             </div>
           </div>
@@ -160,15 +168,61 @@
         <div class="row">
           <div class="col-md-6 align-self-center">
             <h3>Loren Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aperiam debitis assumenda aspernatur recusandae maxime officiis, nostrum in sapiente molestias.</p>
-            <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              aperiam debitis assumenda aspernatur recusandae maxime officiis,
+              nostrum in sapiente molestias.
+            </p>
+            <a href="about.html" class="btn btn-outline-danger btn-lg"
+              >Learn More</a
+            >
           </div>
           <div class="col-md-6">
-            <img src="img/laptop.png" alt="" class="img-fluid">
+            <img src="img/laptop.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </section>
+
+    <!--VIDEO PLAY-->
+    <section id="video-play">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container p-5">
+              <a
+                href="#"
+                class="video"
+                data-video="https://www.youtube.com/embed/mNEUkkoUoIA"
+                data-toggle="modal"
+                data-target="#videoModal"
+              >
+                <i class="fas fa-play fa-3x"></i>
+              </a>
+              <h1>See What We Do</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--VIDEO MODAL-->
+    <div class="modal fade" id="videoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe
+            src=""
+            frameborder="0"
+            height="350"
+            width="100%"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -191,10 +245,26 @@
       $("#year").text(new Date().getFullYear());
 
       // configure slider
-      $('.carousel').carousel({
-        interval:6000,
-        pause:'hover'
-      })
+      $(".carousel").carousel({
+        interval: 6000,
+        pause: "hover",
+      });
+
+      // Video Play
+      $(function () {
+        // Auto play modal video
+        $(".video").click(function () {
+          var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto =
+              videoSRC +
+              "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+          $(theModal + " iframe").attr("src", videoSRCauto);
+          $(theModal + " button.close").click(function () {
+            $(theModal + " iframe").attr("src", videoSRC);
+          });
+        });
+      });
     </script>
   </body>
 </html>
