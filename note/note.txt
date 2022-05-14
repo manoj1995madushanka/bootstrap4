@@ -44,3 +44,7 @@ Koala(http://koala-app.com/) is a tool for compile edited bootstrap source files
     if we need to change default bootstrap properties we can do it in _variables.scss file before compile using koala
     when I update scss folder style sheet and after save the relavent css file will automatically recompile
 
+press ctrl+d for edit multiple lines 
+
+d.none : display none
+d-sm-block : display on small size sceen as a block 
